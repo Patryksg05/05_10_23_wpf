@@ -5,8 +5,100 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:egzamin_app"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Nadaj Przesyłkę, PESEL: 00000000000" 
+        Height="350" Width="600">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <GroupBox 
+                Header="Rodzaj przesyłki" 
+                Margin="30 20 20 5">
+
+                <StackPanel>
+                    <RadioButton
+                        Content="Pocztówka"
+                        IsChecked="False"
+                        GroupName="type"
+                        x:Name="postcard"
+                        Margin="10 10 0 5"/>
+
+                    <RadioButton
+                        Content="List"
+                        IsChecked="True"
+                        GroupName="type"
+                        x:Name="list"
+                        Margin="10 0 0 5"/>
+
+                    <RadioButton
+                        Content="Paczka"
+                        IsChecked="False"
+                        GroupName="type"
+                        x:Name="pack"
+                        Margin="10 0 0 5"/>
+
+                </StackPanel>
+            </GroupBox>
+
+            <Button
+                Content="Sprawdz cene"
+                Click="check_price_btn"
+                Grid.Row="1"
+                Height="20"
+                Margin="30 -50 20 0"/>
+
+            <Grid Grid.Row="2" Margin="30 -30 30 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Image
+                    x:Name="image"
+                    Source="../../../images/list.png"/>
+
+                <TextBlock
+                    x:Name="price"
+                    Grid.Column="1"
+                    Text="Cena: 1,5 zl"
+                    FontWeight="Bold"
+                    FontSize="13"
+                    Margin="20 15 0 0"
+                    />
+
+            </Grid>
+
+        </Grid>
+        
+        <GroupBox 
+            Header="Dane adresowe"
+            Grid.Column="1">
+            
+        </GroupBox>
+
+        <StackPanel 
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Bottom">
+
+            <Button
+                Content="Zatwierdz"
+                Margin="30 0 30 0"
+                Click="confirm_btn_click"/>
+            
+        </StackPanel>
     </Grid>
 </Window>

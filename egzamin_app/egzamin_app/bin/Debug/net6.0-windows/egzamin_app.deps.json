@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "egzamin_app/1.0.0": {
+        "runtime": {
+          "egzamin_app.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "egzamin_app/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

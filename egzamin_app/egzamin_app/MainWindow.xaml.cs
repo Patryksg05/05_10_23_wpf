@@ -24,5 +24,28 @@ namespace egzamin_app
         {
             InitializeComponent();
         }
+
+        private void confirm_btn_click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void check_price_btn(object sender, RoutedEventArgs e)
+        {
+            if(postcard.IsChecked == true)
+            {
+                image.Source = new BitmapImage(new Uri("../../../images/pocztowka.png", UriKind.Relative));
+                price.Text = "Cena: 1zł";
+            }
+            else if(list.IsChecked == true)
+            {
+                image.Source = new BitmapImage(new Uri("../../../images/list.png", UriKind.Relative));
+                price.Text = "Cena: 1,5zł";
+            }
+            else if(pack.IsChecked == true)
+            {
+                image.Source = new BitmapImage(new Uri("../../../images/paczka.png", UriKind.Relative));
+                price.Text = "Cena: 10zł";
+            }
+        }
     }
 }
