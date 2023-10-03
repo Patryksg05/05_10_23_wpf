@@ -5,8 +5,68 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:image_app"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Dodaj pracownika" Height="300" Width="500">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <GroupBox 
+            Header="Dane pracownika"
+            Margin="20 10 20 0">
+
+            <StackPanel Orientation="Vertical" Margin="0 10 0 0">
+
+                <StackPanel 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center">
+
+                    <Label Content="Imie" Margin="0 0 50 0"/>
+                    <TextBox Width="100"/>
+                    
+                </StackPanel>
+
+                <StackPanel 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center"
+                    Margin="0 10 0 0">
+
+                    <Label Content="Nazwisko" Margin="0 0 25 0"/>
+                    <TextBox Width="100"/>
+
+                </StackPanel>
+
+                <StackPanel 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center"
+                    Margin="0 10 0 0">
+
+                    <Label Content="Stanowisko" Margin="0 0 50 0"/>
+                    <TextBox Width="100"/>
+
+                </StackPanel>
+
+            </StackPanel>
+            
+        </GroupBox>
+
+        <StackPanel
+            Grid.Row="1"
+            Grid.ColumnSpan="2" 
+            VerticalAlignment="Bottom">
+
+            <Button
+                Content="Zatwierdz"
+                Width="170"
+                Margin="0 0 0 10"
+                Click="confirm_btn" />
+
+        </StackPanel>
+        
     </Grid>
 </Window>

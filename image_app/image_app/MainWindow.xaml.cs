@@ -24,5 +24,10 @@ namespace image_app
         {
             InitializeComponent();
         }
+
+        private void confirm_btn(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
