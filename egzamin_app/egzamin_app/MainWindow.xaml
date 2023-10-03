@@ -85,7 +85,29 @@
         
         <GroupBox 
             Header="Dane adresowe"
-            Grid.Column="1">
+            Grid.Column="1"
+            Margin="0 20 30 20">
+
+            <StackPanel>
+
+                <Label Content="Ulica z numerem" Margin="8 10 0 0"/>
+                <TextBox 
+                    x:Name="street_text_box"
+                    Text="Konopnickiej 89"
+                    Margin="10 0 10 0"/>
+
+                <Label Content="Kod pocztowy" Margin="8 10 0 0"/>
+                <TextBox 
+                    x:Name="post_code_text_box"
+                    Text="65124"
+                    Margin="10 0 10 0"/>
+
+                <Label Content="Miasto" Margin="8 10 0 0"/>
+                <TextBox 
+                    x:Name="city_text_box"
+                    Margin="10 0 10 0"/>
+
+            </StackPanel>
             
         </GroupBox>
 

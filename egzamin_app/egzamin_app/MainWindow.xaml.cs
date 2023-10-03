@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Ink;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -27,6 +28,22 @@ namespace egzamin_app
 
         private void confirm_btn_click(object sender, RoutedEventArgs e)
         {
+            if (post_code_text_box.Text.Length != 5)
+                MessageBox.Show("Nieprawidłowa liczba cyfr w kodzie pocztowym!");
+            else
+            {
+                int result;
+
+                if(int.TryParse(post_code_text_box.Text, out result))
+                {
+                    if (result >= 0 && result <= 99999)
+                        MessageBox.Show("Dane przesyłki zostały wprowadzone!");
+                    else
+                        MessageBox.Show("Kod pocztowy powinien sie składać z samych cyfr!");
+
+                }
+            }
+            
         }
 
         private void check_price_btn(object sender, RoutedEventArgs e)
