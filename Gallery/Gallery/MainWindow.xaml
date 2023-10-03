@@ -47,7 +47,7 @@
                 Text="Enter a number of image to display: "/>
 
             <TextBox
-                x:Name="image_id"
+                x:Name="image_id_text_box"
                 Width="30"
                 Margin="10 0 0 0"/>
 
