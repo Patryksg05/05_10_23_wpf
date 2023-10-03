@@ -24,5 +24,20 @@ namespace Gallery
         {
             InitializeComponent();
         }
+
+        private void left_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void right_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void confirm_btn(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
