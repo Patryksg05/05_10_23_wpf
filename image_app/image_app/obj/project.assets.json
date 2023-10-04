@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Patryksg05\\Desktop\\05_10_WPF\\image_app\\image_app\\image_app.csproj",
+      "projectUniqueName": "C:\\Users\\Patryksg05\\OneDrive\\Pulpit\\image_app\\image_app\\image_app.csproj",
       "projectName": "image_app",
-      "projectPath": "C:\\Users\\Patryksg05\\Desktop\\05_10_WPF\\image_app\\image_app\\image_app.csproj",
+      "projectPath": "C:\\Users\\Patryksg05\\OneDrive\\Pulpit\\image_app\\image_app\\image_app.csproj",
       "packagesPath": "C:\\Users\\Patryksg05\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Patryksg05\\Desktop\\05_10_WPF\\image_app\\image_app\\obj\\",
+      "outputPath": "C:\\Users\\Patryksg05\\OneDrive\\Pulpit\\image_app\\image_app\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Patryksg05\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
