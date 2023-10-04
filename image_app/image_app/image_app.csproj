@@ -12,13 +12,6 @@
     <None Remove="images\forest2.jpg" />
     <None Remove="images\forest3.jpg" />
     <None Remove="images\forest4.jpg" />
-    <None Remove="images\forest5.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="images\forest3.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -28,12 +21,10 @@
     <Resource Include="images\forest2.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="images\forest4.jpg">
+    <Resource Include="images\forest3.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="images\forest5.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="images\forest4.jpg" />
   </ItemGroup>
 
 </Project>
